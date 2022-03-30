@@ -1,0 +1,10 @@
+# mybatis配置
+mybatis:
+  #对应mapper映射文件路径
+  mapper-locations: classpath:mapper/*.xml
+  #对应实体类路径
+  type-aliases-package: com.yundasys.beidou.dipper.model.entity
+  configuration:
+    # 开启驼峰命名转换
+    mapUnderscoreToCamelCase: true
+

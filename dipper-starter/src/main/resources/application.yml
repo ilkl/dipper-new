@@ -1,0 +1,6 @@
+spring:
+  application:
+    name: dipper
+  profiles:
+    active: dev
+    include: config,druid,mybatis,redis

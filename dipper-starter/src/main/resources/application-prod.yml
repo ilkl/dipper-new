@@ -1,0 +1,12 @@
+spring:
+  datasource:
+    username: glogowner
+    password: FnvtXrg9ZBwvQ0yA
+    url: jdbc:oracle:thin:@10.172.42.62:1521/ORCL
+    driver-class-name: oracle.jdbc.driver.OracleDriver
+
+# 生产环境打开日志记录
+logging:
+  config: classpath:spring-logback.xml
+  file:
+    path: logs
