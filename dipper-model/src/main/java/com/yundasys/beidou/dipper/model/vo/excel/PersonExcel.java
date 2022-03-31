@@ -13,6 +13,4 @@ class PersonExcel {
     private String nameN;
     @Excel(name = "年龄")
     private Integer age;
-
-
 }

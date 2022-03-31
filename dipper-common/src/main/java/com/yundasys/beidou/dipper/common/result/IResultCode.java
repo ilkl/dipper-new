@@ -1,7 +1,7 @@
 package com.yundasys.beidou.dipper.common.result;
 
 /**
- * @author haoxr
+ * @author xgh
  **/
 public interface IResultCode {
 

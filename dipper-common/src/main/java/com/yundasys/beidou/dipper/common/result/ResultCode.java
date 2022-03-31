@@ -6,7 +6,7 @@ import lombok.NoArgsConstructor;
 import java.io.Serializable;
 
 /**
- * @author haoxr
+ * @author xgh
  * @date 2020-06-23
  **/
 @AllArgsConstructor
@@ -15,6 +15,8 @@ public enum ResultCode implements IResultCode, Serializable {
 
     SUCCESS("0", "一切ok"),
 
+    NOT_FOUND_404("404", "404 NOT FOUND"),
+    SERVER_ERROR("10000", "服务器内部错误"),
     USER_ERROR("A0001", "用户端错误"),
     USER_LOGIN_ERROR("A0200", "用户登录异常"),
 

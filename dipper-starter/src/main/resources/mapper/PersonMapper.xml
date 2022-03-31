@@ -4,4 +4,8 @@
     <select id="getAllUser" resultType="com.yundasys.beidou.dipper.model.entity.Person">
         SELECT * FROM t_person
     </select>
+
+    <select id="getOne" resultType="com.yundasys.beidou.dipper.model.entity.Person">
+        SELECT * FROM t_person where id =#{id}
+    </select>
 </mapper>
