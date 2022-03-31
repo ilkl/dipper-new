@@ -1,0 +1,19 @@
+spring:
+  datasource:
+    username: test
+    password: test
+    url: jdbc:oracle:thin:@localhost:1521/helowin
+    driver-class-name: oracle.jdbc.driver.OracleDriver
+#    username: glogowner
+#    password: FnvtXrg9ZBwvQ0yA
+#    url: jdbc:oracle:thin:@10.172.42.62:1521/ORCL
+#    driver-class-name: oracle.jdbc.driver.OracleDriver
+
+# 打开sql日志
+logging:
+  level:
+    com:
+      yundasys:
+        beidou:
+          dipper:
+            mapper: debug

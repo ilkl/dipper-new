@@ -2,5 +2,5 @@ spring:
   application:
     name: dipper
   profiles:
-    active: dev
+    active: uat
     include: config,druid,mybatis,redis

@@ -9,7 +9,7 @@ spring:
       min-evictable-idle-time-millis: 300000                # 一个连接在池中最小生存的时间，单位是毫秒
       time-between-eviction-runs-millis: 60000              # 多久才进行一次检测需要关闭的空闲连接，单位是毫秒
       filters: stat,wall                                    # 配置扩展插件：stat-监控统计，log4j-日志，wall-防火墙（防止SQL注入），去掉后，监控界面的sql无法统计
-      validation-query: SELECT 1                            # 检测连接是否有效的 SQL语句，为空时以下三个配置均无效
+      validation-query: SELECT 1 from dual                           # 检测连接是否有效的 SQL语句，为空时以下三个配置均无效
       test-on-borrow: true                                  # 申请连接时执行validationQuery检测连接是否有效，默认true，开启后会降低性能
       test-on-return: true                                  # 归还连接时执行validationQuery检测连接是否有效，默认false，开启后会降低性能
       test-while-idle: true                                 # 申请连接时如果空闲时间大于timeBetweenEvictionRunsMillis，执行validationQuery检测连接是否有效，默认false，建议开启，不影响性能
